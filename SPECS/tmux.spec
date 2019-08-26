@@ -33,12 +33,14 @@ export CFLAGS
 export CXXFLAGS
 mv %{name}-%{gh_version} %{name}-%{version}
 cd %{name}-%{version}
+./autogen.sh
 %configure
 make %{?_smp_mflags} LDFLAGS="%{optflags}"
 
 %install
-make install DESTDIR=%{buildroot} INSTALLBIN="install -p -m 755" INSTALLMAN="install -p -m 644"
-# bash completion
+rm -rf $RPM_BUILD_ROOT
+install -d -m 755 $RPM_BUILD_ROOT%{_bindir}
+install -m 0755 %{name}-%{version}/%{name} $RPM_BUILD_ROOT%{_bindir}
 install -Dpm 644 %{SOURCE1} %{buildroot}%{_datadir}/bash-completion/completions/tmux
 
 %post
@@ -64,12 +66,9 @@ fi
 rm -rf %{buildroot}
 
 %files
-%doc CHANGES FAQ TODO
 %{_bindir}/tmux
-%{_mandir}/man1/tmux.1.*
 %{_datadir}/bash-completion/completions/tmux
 
 %changelog
 * Mon Aug 26 2019 Jamie Curnow <jc@jc21.com> 2.9.1-1
 - v2.9a
-
