@@ -1,0 +1,7 @@
+{
+  "publish": {
+    "PACKAGE": "tmux",
+    "GH_USER": "jc21-rpm",
+    "VERSION": "2.9.1"
+  }
+}
