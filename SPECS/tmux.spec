@@ -1,10 +1,10 @@
 %define debug_package %{nil}
 
 %global gh_user    tmux
-%global gh_version 2.9a
+%global gh_version 3.0a
 
 Name:           tmux
-Version:        2.9.1
+Version:        3.0.1
 Release:        1
 Summary:        A terminal multiplexer
 Group:          Applications/System
@@ -70,5 +70,8 @@ rm -rf %{buildroot}
 %{_datadir}/bash-completion/completions/tmux
 
 %changelog
+* Tue Dec 3 2019 Jamie Curnow <jc@jc21.com> 3.0.1-1
+- v3.0a
+
 * Mon Aug 26 2019 Jamie Curnow <jc@jc21.com> 2.9.1-1
 - v2.9a
