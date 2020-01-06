@@ -6,4 +6,4 @@ SRPMS
 DEPS
 BUILD
 BUILDROOT
-
+SOURCES/tmux*.tar.gz
