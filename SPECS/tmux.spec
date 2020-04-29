@@ -1,7 +1,7 @@
 %global _hardened_build 1
 
 Name:           tmux
-Version:        3.0a
+Version:        3.1a
 Release:        1%{?dist}
 Summary:        A terminal multiplexer
 
