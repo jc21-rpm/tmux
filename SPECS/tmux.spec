@@ -1,7 +1,7 @@
 %global _hardened_build 1
 
 Name:           tmux
-Version:        3.1a
+Version:        3.1b
 Release:        1%{?dist}
 Summary:        A terminal multiplexer
 
@@ -65,6 +65,9 @@ fi
 %{_datadir}/bash-completion/completions/tmux
 
 %changelog
+* Tue May 05 2020 Jamie Curnow <jc@jc21.com> - 3.1b-1
+- v3.1b
+
 * Tue Dec 03 2019 Brian C. Lane <bcl@redhat.com> - 3.0a-1
 - New upstream release v3.0a
   Resolves: rhbz#1715313
