@@ -2,7 +2,7 @@
 
 Name:           tmux
 Version:        3.1b
-Release:        1%{?dist}
+Release:        1
 Summary:        A terminal multiplexer
 
 # Most of the source is ISC licensed; some of the files in compat/ are 2 and
@@ -140,7 +140,7 @@ fi
 
 * Tue May 24 2016 Sven Lankes <sven@lank.es> - 2.2-3
 - add libutempter-devel as buildrequires to allow writing to utmp
-- fixes rhbz #1338936 
+- fixes rhbz #1338936
 
 * Mon May 09 2016 Sven Lankes <sven@lank.es> - 2.2-2
 - Adapt source0 and url for new website (fixes rhbz #1334255)
@@ -155,7 +155,7 @@ fi
 - add upstream bash-completion (thanks to Scott Tsai - closes rhbz #1148183)
 
 * Mon Feb 22 2016 Sven Lankes <sven@lank.es> - 2.1-1
-- New upstream release 
+- New upstream release
 
 * Fri Feb 05 2016 Fedora Release Engineering <releng@fedoraproject.org> - 2.0-3
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_24_Mass_Rebuild
@@ -211,8 +211,8 @@ fi
 
 * Tue Nov 01 2011 Sven Lankes <sven@lank.es> 1.5-1
 - New upstream release
-- Do the right thing (tm) and revert to $upstream-behaviour: 
-   No longer install tmux setgid and no longer use /var/run/tmux 
+- Do the right thing (tm) and revert to $upstream-behaviour:
+   No longer install tmux setgid and no longer use /var/run/tmux
    for sockets. Use "tmux -S /var/run/tmux/tmux-`id -u`/default attach"
    if you need to access an "old" tmux session
 - tmux can be used as a login shell so add it to /etc/shells
