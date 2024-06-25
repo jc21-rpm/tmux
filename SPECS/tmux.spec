@@ -1,8 +1,8 @@
 %global _hardened_build 1
 
 Name:           tmux
-Version:        3.1b
-Release:        1
+Version:        3.4
+Release:        1%{?dist}
 Summary:        A terminal multiplexer
 
 # Most of the source is ISC licensed; some of the files in compat/ are 2 and
@@ -65,6 +65,9 @@ fi
 %{_datadir}/bash-completion/completions/tmux
 
 %changelog
+* Tue Jun 25 2024 Jamie Curnow <jc@jc21.com> - 3.4-1
+- v3.4
+
 * Tue May 05 2020 Jamie Curnow <jc@jc21.com> - 3.1b-1
 - v3.1b
 
