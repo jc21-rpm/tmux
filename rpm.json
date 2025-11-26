@@ -2,6 +2,6 @@
   "publish": {
     "PACKAGE": "tmux",
     "GH_USER": "jc21-rpm",
-    "VERSION": "3.5a"
+    "VERSION": "3.6"
   }
 }
