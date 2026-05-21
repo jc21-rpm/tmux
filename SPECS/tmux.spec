@@ -1,7 +1,7 @@
 %global _hardened_build 1
 
 Name:           tmux
-Version:        3.6a
+Version:        3.6b
 Release:        1%{?dist}
 Summary:        A terminal multiplexer
 
@@ -65,6 +65,9 @@ fi
 %{_datadir}/bash-completion/completions/tmux
 
 %changelog
+* Fri May 22 2026 Jamie Curnow <jc@jc21.com> - 3.6b-1
+- v3.6b
+
 * Sun Dec 7 2025 Jamie Curnow <jc@jc21.com> - 3.6a-1
 - v3.6a
 
